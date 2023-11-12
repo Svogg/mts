@@ -1,0 +1,73 @@
+Python
+
+ 1. *args передача позиционных аргументов в функцию, **kwargs передача именнованых аргументов в функцию
+ 
+ 2. Обработка исключений выполняется с помощью try except finally else.
+ 
+ 3. Кортеж неизменяемый, список изменяемый
+ 
+ 4. def is_palindrome(some_str: str) -> bool:
+        return some_str == some_str[::-1]
+		
+ 5. def time_convert(sec: int) -> str:
+        return f'{sec // 3600} ч. {(sec // 60 ) % 60} мин. {sec % 60} сек.'
+
+ 6. def is_intersect(a: list, b: list) -> bool:
+        return any(map(lambda x: x in a, b))
+
+
+JavaScript
+
+ 7. const объявляется лишь один раз и нельзя изменить ее значение,
+    let объявляется один раз в рамках единой области видимости, изменяема,
+	var может объявляться неограниченной кол-во раз, изменяема.
+	
+ 8. if (объект['ключ\свойство'] == undefined) {...},
+	if (объект['ключ\свойство'] == null) {...},
+	if (объект['ключ\свойство']) {...},
+	if ('ключ\свойство' in объект) {...}
+ 
+ 9. for(...){...}, 
+    for(... in ...){...},
+	for(... of ...){...},
+	while(...){...},
+	do {...} while(...)
+	
+ 10. b) тк переменная greeting уже была определена выше с помощью let,
+     возникает запрет на ее повторное объявление в рамках единой области видимости.	 
+	 Чтобы исправить данную ошибку необходимо было сделать следующее:
+	 let greeting = "say Hi!";
+	 greeting = "say Hello instead";
+	 
+ 11. event.preventDefault()
+ 
+ 
+ Oracle
+ 
+ 12. Процедуры могут выполнять insert, update, delete, а функции только select
+ 
+ 13. Если нужны строки, которые строго пересекаются - join, если допустимо наличия null значений - left join
+ 
+ 14. select, distinct, from, join, where, group by, order by, fetch first
+ 
+ 15. select * from all_tab_cols where column_name like 'personal_account_id';
+ 
+ 16. with tmp as (
+	 select 
+	  name.value as name,
+	  surname.value as surname,
+	  patronymic.value as patronymic, 
+	  name.popularity + surname.popularity + patronymic.popularity as popularity 
+	 from name
+	 cross join surname,
+	 cross join patronymic
+	 )
+	
+	 select distinct 
+	  surname.value,
+	  name.value,
+	  patronymic.value
+	 from tmp
+	 order by popularity
+	 
+ 17. Нет.
