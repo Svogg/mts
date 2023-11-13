@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 #### 4) start uvicorn server: 
 ```
-uvicon main:app --reload
+uvicorn main:app --reload
 ```
 * * *
 
