@@ -19,8 +19,19 @@
 ```
 git clone https://github.com/Svogg/mts
 ```
+#### 2) Open backend dir: 
+```
+cd backend
+```
+* * *
 
-#### 2) Open your browser at: 
+#### 3) start uvicorn server: 
+```
+uvicon main:app --reload
+```
+* * *
+
+#### 4) Open your browser at: 
 ```
 http://localhost:63342/mts/frontend/
 ```
