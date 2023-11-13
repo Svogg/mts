@@ -25,13 +25,19 @@ cd backend
 ```
 * * *
 
-#### 3) start uvicorn server: 
+#### 3) download all requirements: 
+```
+pip install -r requirements.txt
+```
+* * *
+
+#### 4) start uvicorn server: 
 ```
 uvicon main:app --reload
 ```
 * * *
 
-#### 4) Open your browser at: 
+#### 5) Open your browser at: 
 ```
 http://localhost:63342/mts/frontend/
 ```
