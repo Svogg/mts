@@ -70,4 +70,4 @@ JavaScript
 	 from tmp
 	 order by popularity
 	 
- 17. Нет.
+ 17. Да.
